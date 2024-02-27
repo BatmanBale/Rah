@@ -1,0 +1,29 @@
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    //initialize variable 
+    int number;
+    
+    cout << "Enter number: ";
+    cin >> number;
+    //if (condition) is equal to 0, output this block, 
+    if (number == 0) {
+        cout << "SPECIAL NUMBER! " << number << " isn't positive or negative!" << endl;
+    }//% sign computes value of entered number / 2 leaving the remainder, then checks if number is even or negative(&& literally just means expression AND expression)
+    else if (number % 2 == 0 && number < 0) {
+        cout << number << " is even and negative." << endl;
+    }//(|| means expression OR expression)
+    else if (number % 2 == 0 || number < 0) {
+        cout << number << " is either even or negative, but not both." << endl;
+    }
+    else {
+        cout << number << " does not meet the criteria." << endl;
+    }
+
+    return 0;
+}
+
